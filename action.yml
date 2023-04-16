@@ -5,14 +5,14 @@ branding:
   icon: "git-branch"
   color: "gray-dark"
 inputs:
-  gitee-username:
-    description: "psych-future"
+  gitee-username:psych-future
+    description: ""
     required: true
-  gitee-password:
-    description: "${{ secrets.GITEE_PASSWORD }}"
+  gitee-password:${{ secrets.GITEE_PASSWORD }}
+    description: ""
     required: true
-  gitee-repo:
-    description: "psych-future/pf-hexo"
+  gitee-repo:psych-future/pf-hexo
+    description: ""
     required: true
   branch:
     description: "Which branch to build"

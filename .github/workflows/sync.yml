@@ -7,12 +7,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.repository == 'yanglbme/gitee-pages-action'
+    if: github.repository == 'git@github.com:psych-future/pf-hexo.git'
     steps:
       - name: Sync to Gitee
-        uses: wearerequired/git-mirror-action@master
+        uses: psych-future/pf-hexo@master
         env:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
         with:
-          source-repo: git@github.com:yanglbme/gitee-pages-action.git
-          destination-repo: git@gitee.com:yanglbme/gitee-pages-action.git
+          source-repo: git@github.com:psych-future/pf-hexo.git
+          destination-repo: git@gitee.com:psych-future/pf-hexo.git

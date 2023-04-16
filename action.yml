@@ -6,13 +6,13 @@ branding:
   color: "gray-dark"
 inputs:
   gitee-username:
-    description: "The Gitee username, like yanglbme"
+    description: "psych-future"
     required: true
   gitee-password:
-    description: "The Gitee password"
+    description: "${{ secrets.GITEE_PASSWORD }}"
     required: true
   gitee-repo:
-    description: "The Gitee repository, like doocs/leetcode"
+    description: "psych-future/pf-hexo"
     required: true
   branch:
     description: "Which branch to build"
